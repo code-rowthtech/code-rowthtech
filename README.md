@@ -1,3 +1,80 @@
-# RowthTech Healthcare software engineers and HIE integrators for the US and the GCC. 50+ engineers in Chandigarh, India. Healthcare is what we do every day. ## Why healthcare teams pick us- **Two regulated markets, one team.** We have worked inside US healthcare (HIPAA, HL7 FHIR, X12) and Gulf healthcare (NPHIES, Malaffi, NABIDH, DHA). Very few engineering teams have done both.- **We run a medical billing company.** ProBill RCM is our own US revenue cycle business. We know claims, denials and payer rules as operators, not only as developers.- **Hospital scale.** Technology partner to Tata Memorial Hospital, one of Asia's largest cancer centres.- **Device depth.** ResMed, React Health, Apple HealthKit, Fitbit, Oura, Samsung and Wear OS, all in production.- **We build our own healthcare products.** ProBill PMS for US practices, and a GCC practice management system built integration-ready for Malaffi, NABIDH and NPHIES. ## GCC health information exchange (HIE) integration | Exchange | Where | What we do | |---|---|---| | NPHIES | Saudi Arabia | Eligibility, pre-authorisation and claims on HL7 FHIR. Sandbox onboarding and CHI registration readiness. | | Malaffi | Abu Dhabi | Connecting EMRs and clinic systems to the exchange: 
-patient, encounter and results messages. | | NABIDH | Dubai (DHA) | Connecting provider systems to Dubai's exchange to DHA requirements. | We also advise health platforms entering Saudi Arabia and the UAE on what it takes to become exchange-ready before they write code. ## US healthcare engineering- EHR/EMR integration: HL7 v2, FHIR, SMART on FHIR- Revenue cycle: X12 837/835, eligibility 270/271, claim scoring, AI denial prediction- Remote patient monitoring: device and wearable data pipelines, clinical dashboards- Platforms built with HIPAA safeguards: access control, audit logs, encryption ## Healthcare work we can name- **Tata Memorial Hospital:** wearable data platform for cancer patients. 500+ patients onboarded, 127 health parameters tracked.- **RPM Logix (US):** ResMed and React Health integrations on a multi-tenant remote patient monitoring platform, on Google Cloud.- **LifeSage (US):** EHR records, lab results and 6 wearable ecosystems in one patient view, on a HIPAA-compliant architecture.- **ProBill RCM (US):** AI that scores every claim and predicts denials before submission.- **Saudi hospital EHR:** new EHR features and NPHIES integration.- **Foli (US):** HIPAA fertility and IVF tracking app with Stripe payments.- **ARC Health (US):** we managed the web platforms for a mental health group with 100+ locations. ## Sample code in this account Small, working examples of how we solve healthcare problems. All data is synthetic. No client code. **US market**- fhir-patient-sync: pull patients and observations from a FHIR server into PostgreSQL- hl7v2-to-fhir: convert HL7 v2 messages into FHIR resources- x12-837-claim-checker: check and risk-score claims before submission- wearable-data-normalizer: Fitbit, Apple Health and Oura data in one schema- healthcare-api-security-starter: role-based access, audit log, field encryption
-**GCC market**- nphies-eligibility-sample: build and validate an NPHIES eligibility request- nphies-claim-bundle-sample: build a NPHIES claim bundle from a billing record- hie-adt-feed-sample: build and validate the HL7 v2 ADT messages UAE exchanges expect ## Contact rowthtech.com
+# RowthTech
+
+### Healthcare Software Engineering · Interoperability · Automation
+
+We build healthcare software and integrations for teams serving the
+United States and GCC markets.
+
+Based in Chandigarh, India.
+
+🌐 [rowthtech.com](https://rowthtech.com)
+
+## Healthcare Engineering
+
+### EHR & EMR Integration
+- HL7 v2 messaging and FHIR APIs
+- SMART on FHIR integrations
+- Patient records, encounters, observations and lab results
+- Data synchronization between healthcare systems
+
+### Revenue Cycle & Insurance
+- X12 837 claims and 835 remittance workflows
+- Eligibility verification using 270/271 transactions
+- Claim validation and denial-risk checks
+- Billing workflow automation
+
+### Remote Patient Monitoring
+- Device and wearable data integrations
+- Data normalization across different sources
+- Clinical dashboards and monitoring workflows
+
+### Healthcare API Security
+- Role-based access control
+- Audit logging
+- Encryption and secure configuration
+- Protection of sensitive healthcare data
+
+## GCC Healthcare Integrations
+
+| Exchange | Market | Integration focus |
+|---|---|---|
+| NPHIES | Saudi Arabia | Eligibility, pre-authorization and claims |
+| Malaffi | Abu Dhabi, UAE | Patient, encounter and clinical data exchange |
+| NABIDH | Dubai, UAE | Provider-system interoperability |
+
+Exchange-specific implementations must follow the applicable
+implementation guides and onboarding requirements.
+
+## Public Sample Projects — Planned
+
+We are preparing small, runnable examples demonstrating healthcare
+engineering patterns. Repositories will be linked here as they are published.
+
+| Project | Purpose |
+|---|---|
+| `fhir-patient-sync` | Synchronize FHIR Patient and Observation resources with PostgreSQL |
+| `hl7v2-to-fhir` | Convert HL7 v2 ADT and ORU messages into FHIR resources |
+| `x12-837-claim-checker` | Validate sample insurance claims and flag potential issues |
+| `nphies-eligibility-sample` | Build and validate sample NPHIES eligibility requests |
+| `hie-adt-feed-sample` | Demonstrate patient registration and admission messaging |
+| `wearable-data-normalizer` | Convert wearable exports into a common data schema |
+| `healthcare-api-security-starter` | Demonstrate access controls, audit logs and encryption |
+| `nphies-claim-bundle-sample` | Build and validate sample NPHIES claim bundles |
+
+## Our Public Code Standards
+
+- Original sample implementations, separate from client projects
+- Synthetic data only
+- No patient information, credentials or private client code
+- Clear setup instructions and sample inputs/outputs
+- Automated tests and documented limitations
+- Security safeguards demonstrated without unsupported compliance claims
+
+Public samples are educational examples. Production use requires
+appropriate security, privacy, integration and operational review.
+
+## Work With Us
+
+For healthcare platforms, interoperability projects and workflow automation:
+
+**[Visit rowthtech.com](https://rowthtech.com)**
